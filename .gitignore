@@ -172,5 +172,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
 cred.txt
 notebooks/
+s3_local/
+aws_creds.txt
+data/
+models/
