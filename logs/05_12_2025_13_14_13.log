@@ -1,0 +1,7 @@
+[ 2025-05-12 13:15:21,947 ] dagshub - INFO - Accessing as nafiul-araf
+[ 2025-05-12 13:15:22,499 ] dagshub - INFO - Initialized MLflow to track repo "nafiul-araf/Drug-Review-Project-MLFlow-"
+[ 2025-05-12 13:15:22,507 ] dagshub - INFO - Repository nafiul-araf/Drug-Review-Project-MLFlow- initialized!
+[ 2025-05-12 13:15:24,519 ] root - INFO - Model loaded from ./models/model.pkl
+[ 2025-05-12 13:15:27,466 ] root - INFO - Data loaded from ./data_out/processed/test_bow.csv
+[ 2025-05-12 13:15:27,926 ] root - INFO - Model evaluation metrics calculated
+[ 2025-05-12 13:15:27,928 ] root - INFO - Metrics saved to reports/metrics.json

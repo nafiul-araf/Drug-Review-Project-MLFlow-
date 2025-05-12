@@ -1,0 +1,6 @@
+[ 2025-05-12 15:20:13,058 ] root - INFO - Data loaded and NaNs filled from ./data/interim/train_processed.csv
+[ 2025-05-12 15:20:13,114 ] root - INFO - Data loaded and NaNs filled from ./data/interim/test_processed.csv
+[ 2025-05-12 15:20:13,129 ] root - INFO - Applying BOW...
+[ 2025-05-12 15:20:13,873 ] root - INFO - Bag of Words applied and data transformed
+[ 2025-05-12 15:20:13,961 ] root - INFO - Data saved to ./data\processed\train_bow.csv
+[ 2025-05-12 15:20:14,002 ] root - INFO - Data saved to ./data\processed\test_bow.csv

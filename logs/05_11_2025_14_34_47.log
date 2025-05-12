@@ -1,0 +1,5 @@
+[ 2025-05-11 14:34:47,644 ] root - INFO - Data loaded and NaNs filled from ./data/interim/train_processed.csv
+[ 2025-05-11 14:34:47,691 ] root - INFO - Data loaded and NaNs filled from ./data/interim/test_processed.csv
+[ 2025-05-11 14:34:47,691 ] root - INFO - Applying BOW...
+[ 2025-05-11 14:34:47,695 ] root - ERROR - Error during Bag of Words transformation: 'sentiment'
+[ 2025-05-11 14:34:47,696 ] root - ERROR - Failed to complete the feature engineering process: 'sentiment'
