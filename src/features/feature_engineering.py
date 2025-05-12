@@ -39,11 +39,11 @@ def load_data(file_path: str) -> pd.DataFrame:
         logging.error('Unexpected error occurred while loading the data: %s', e)
         raise
 
-def apply_bow(train_data: pd.DataFrame, test_data: pd.DataFrame) -> tuple:
+def apply_bow(train_data: pd.DataFrame, test_data: pd.DataFrame, max_features: int) -> tuple:
     """Apply Count Vectorizer to the data."""
     try:
         logging.info("Applying BOW...")
-        vectorizer = CountVectorizer()
+        vectorizer = CountVectorizer(max_features=max_features)
 
         X_train = train_data['review'].values
         y_train = train_data['rating'].values
@@ -79,14 +79,14 @@ def save_data(df: pd.DataFrame, file_path: str) -> None:
 
 def main():
     try:
-        # params = load_params('params.yaml')
-        # max_features = params['feature_engineering']['max_features']
+        params = load_params('params.yaml')
+        max_features = params['feature_engineering']['max_features']
         # max_features = 20
 
         train_data = load_data('./data/interim/train_processed.csv')
         test_data = load_data('./data/interim/test_processed.csv')
 
-        train_df, test_df = apply_bow(train_data, test_data)
+        train_df, test_df = apply_bow(train_data, test_data, max_features)
 
         save_data(train_df, os.path.join("./data", "processed", "train_bow.csv"))
         save_data(test_df, os.path.join("./data", "processed", "test_bow.csv"))
